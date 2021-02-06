@@ -1,35 +1,64 @@
 {
-    "users": [
+    "livres": [
       {
         "id": 1,
-        "first_name": "Robert",
-        "last_name": "Schwartz",
-        "email": "rob23@gmail.com",
-        "image":""
+        "name": "Six of Crowns",
+        "prix": "12.500",
+        "auteure": "Leigh Bardugo",
+        "image":"https://prodimage.images-bn.com/pimages/9781250076960_p0_v5_s550x406.jpg"
       },
       {
         "id": 2,
-        "first_name": "Lucy",
-        "last_name": "Ballmer",
-        "email": "lucyb56@gmail.com"
+        "name": "Cross Fire",
+        "prix": "15.500",
+        "auteure": "Sylvia Day",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563833318l/43348213.jpg"
       },
       {
         "id": 3,
-        "first_name": "Anna",
-        "last_name": "Smith",
-        "email": "annasmith23@gmail.com"
+        "name": "Red Queen",
+        "prix": "20.700",
+        "auteure": "Victoria Aveyard",
+        "image":"https://m.media-amazon.com/images/I/41LHCOh0eBL.jpg"
       },
       {
         "id": 4,
-        "first_name": "Robert",
-        "last_name": "Brown",
-        "email": "bobbrown432@yahoo.com"
-      },
-      {
-        "id": 5,
-        "first_name": "Roger",
-        "last_name": "Bacon",
-        "email": "rogerbacon12@yahoo.com"
+        "name": "The Last Star",
+        "prix": "33.600",
+        "auteure": "Rick Yancey",
+        "image":"https://images-na.ssl-images-amazon.com/images/I/91dWfXQIjlL.jpg"
       }
-    ]
+    
+    ],
+    "livres2":[{
+      "id": 5,
+      "name": "Hiden Bodies",
+      "prix": "29.900",
+      "auteure": "Caroline Kepnes",
+      "image":"https://cdn.waterstones.com/bookjackets/large/9781/4711/9781471192647.jpg"
+    },
+    {
+      "id": 6,
+      "name": "T3 reasons why",
+      "prix": "45.800",
+      "auteure": "Ldp Jeunesse",
+      "image":"https://static.fnac-static.com/multimedia/Images/FR/NR/6f/22/84/8659567/1507-1/tsp20170316181309/13-Reasons-why-13-raisons.jpg"
+    },
+    {
+      "id": 7,
+      "name": "You",
+      "prix": "85.800",
+      "auteure": "Caroline Kepnes",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/51GzkDGQjUL._SX322_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Perfume",
+      "prix": "55.900",
+      "auteure": "patrick süskind",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/51FBVX13C3L._SX322_BO1,204,203,200_.jpg"
+    }
+  ]
+
   }    
+  

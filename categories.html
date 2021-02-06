@@ -187,28 +187,126 @@
     </div>
   </div>
 </div>
+  <!-- Nos Catégories -->
+  <div class="container-fluid my-5">
+    <div class="col-md-12 col-sm-12">
+        <h1 class="text-center catégorie-title mb-4">Nos Catégories</h1>
+       <div class="row">
+         <div class="col-md-6 ">
+           <h2 > Jeune & adulte</h2>
+          </div>
+          <div class="col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                   <label class="input-group-text" for="inputGroupSelect01">Trier par</label>
+                </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Tous</option>
+                      <option value="1">Prix</option>
+                      <option value="2">Référence</option>
+                      <option value="3">Nom de produit:A à Z </option>
+                      <option value="3">En Stock</option>
+                     </select>
+               </div>
+        
+          </div>
+        </div>  
+      </div>
+     </div>
+     <!---------------- Les Cards ------------>
 </main>
 <!------------------------------------END Main  ---------------------->
+<div id="app" class="row text-center ml-3" ></div>
     <script>
       axios
-        .get("http://localhost:3004/users")
+        .get("http://localhost:3004/livres")
         .then((res) => {
           console.log(res.data[0]);
           let datas=res.data
           document.getElementById('app').innerHTML=datas.map(el=>
-          `<h1>${el.first_name}</h1>
-          <h2>${el.last_name}</h2>
-          <h3>${el.email}</h3>
-           
+          `<div >
+            <div >
+            
+              <div class="col-md-3 col-sm-12">
+                <!--------------- book-1 ------------------------>
+              <div class="card cardy "  >
+                <img src=${el.image} class="card-img-top img-fluid" alt="...">
+              <div class="card-body text-center">
+                 <h3 class="card-title">${el.name}</h3>
+                 <h5>${el.prix}</h5>
+                 <h6>${el.auteure}</h6>
+                 <a href="#" class="btn btn-danger ">Voir Plus</a>
+               </div>
+          
+           </div>
+           </div>
+           </div>
+           </div>
           `
-            )
+            ).join(" ")
         })
         .catch((err) => {
           console.log(err);
         });
     </script>
-<div id="app"></div>
- <!--------------------- CDN JS----------- -->
+
+ <!------------ 2ém Catégories  ------------>
+ <div class="container-fluid">
+  <div class="col-md-12 col-sm-12 my-4">
+    <div class="row">
+     <div class="col-md-6 ">
+       <h2 > From Book to Screen</h2>
+      </div>
+      <div class="col-md-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+               <label class="input-group-text" for="inputGroupSelect01">Trier par</label>
+            </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Tous</option>
+                  <option value="1">Prix</option>
+                  <option value="2">Référence</option>
+                  <option value="3">Nom de produit:A à Z </option>
+                  <option value="3">En Stock</option>
+                 </select>
+           </div>
+      </div>
+    </div> 
+    <!------------------------ From book screen ---------------------->
+    <div id="livres2"  class="row text-center ml-3 " ></div>
+     <script>
+      axios
+        .get("http://localhost:3004/livres2")
+        .then((res) => {
+          console.log(res.data[0]);
+          let datas=res.data
+          document.getElementById('livres2').innerHTML=datas.map(el=>
+          `<div >
+            <div >
+            
+              <div class="col-md-3 col-sm-12">
+                <!--------------- book-1 ------------------------>
+              <div class="card cardy "  >
+                <img src=${el.image} class="card-img-top img-fluid" alt="...">
+              <div class="card-body text-center">
+                 <h3 class="card-title">${el.name}</h3>
+                 <h5>${el.prix}</h5>
+                 <h6>${el.auteure}</h6>
+                 <a href="#" class="btn btn-danger ">Voir Plus</a>
+               </div>
+          
+           </div>
+           </div>
+           </div>
+           </div>
+          `
+            ).join(" ")
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    </script>
+ <!------------------------------------ CDN JS-------------------------- -->
 
     <!-- ********************** Bootstrap JS *************************** -->
     <script

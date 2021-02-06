@@ -135,6 +135,15 @@ header .container .col-md-7 button {
     border-radius: 20px;
     transition: 0.8s ease-in-out;
 }
+.mycard{
+
+    display: flex;
+
+}
+.cardy{
+    width: 244px;
+    margin-left: 25px;
+}
 /*****Footer  ******/
 footer {
     background: rgb(0, 0, 0);
