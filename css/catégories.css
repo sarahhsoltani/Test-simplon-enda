@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Roboto:ital,wght@0,100;0,400;1,300&family=Sofia&display=swap');
+:root{
+    --light-gray:#2b3032a1;
+
+    --border:#2b303218;
+    --text-color:#ff686b;
+    --roboto:"Roboto",sans-serif;
+    --gugi:"Gugi",cursive;
+    --sofia:"Sofia",cursive;
+}
+/************* Navbar **************/
+/* Google Font */
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+body{
+    background-color: #f8f8f8
+}
+*{
+    box-sizing: border-box;
+}
+header,section{
+    overflow-x: hidden;
+}
+:root{
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+header a{
+    font-family: var(--Sniglet-font);
+    font-size: 0.9em;
+    color:whitesmoke;
+}
+header{
+   background: #dd2476;
+   background: black;
+}
+.navbar-nav .nav-link:hover {
+    color: #9b101f !important;
+    border-bottom: 1px solid #9b101f;
+  }
+
+header .nav-item:last-child{
+    padding-right: 10.5em;}
+header .nav-item{
+    padding:0.9em
+}
+header .navbar-brand{
+    padding-left:8rem;
+}
+header .nav-link:hover{
+    color: black;
+}
+header .row .col-md-5{
+padding:4.2vmin 1vmin;
+}
+header .row .col-md-7{
+ padding:22vmin 1vmin;
+ padding-bottom: 35vmin;
+ font-family: var(--Rubik);
+ color:white
+}
+header .row .col-md-5 img{
+    width: 90%;
+}
+header .row .col-md-7 h6{
+    padding:1vmin;
+    letter-spacing: 4px;
+}
+header .container .col-md-7  h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding:0.1em 0em;
+}
+header .container .col-md-7 p{
+    padding:1vmin 5vmin
+}
+header .container .col-md-7 button {
+    border-radius:  30px;
+    font-weight: bold;
+}
+/******** Section 1  *************/
+.primary-color{
+    color:#9b101f;
+    font-family: var(--gugi);
+}
+/* .bg-primary-color{
+    background-color:var(--);
+} */
+.text-color{
+    color:var(--text-color)
+}
+.font-robot{
+    font-family: var(--roboto);
+}
+.lightblue{
+    color:lightblue
+}
+.icons{
+    padding-left: 7.5em;
+}
+
+#videowrapper {
+    padding: 0;
+    
+  
+    box-shadow: 2px 2px 0 0 #bcbcbc, 8px 8px 16px rgba(0,0,0,0.1);
+}
+.catégorie-title{
+    font-family: var(--gugi);
+    font-weight: 700;
+    color:#9b101f;
+}
+.destination{
+    font-family: var(--gugi);
+    font-weight: 700;
+}
+.read{
+    border-radius: 30px !important;
+    font-weight: bold !important;
+    background-color: #9b101f !important;
+    color: white !important;
+}
+/* Catégorie */
+#homecard1:hover , #homecard2:hover, #homecard3:hover{
+    transform: translateY(-15px);
+    background-color: white;
+}
+#homecard1, #homecard2, #homecard3 {
+   cursor: pointer;
+    border-radius: 20px;
+    transition: 0.8s ease-in-out;
+}
+/*****Footer  ******/
+footer {
+    background: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding:14vmin 18vmin
+}
+footer p span{
+    color: #9b101f;
+}
+footer input{
+    border:none;
+}
+footer input::placeholder{
+    color:white
+}
+footer .input-group .input-group-text{
+    background:#9b101f;
+    border: none;
+} 
+footer .column i{
+    color: #9b101f;
+}
+footer i{
+    padding:0 0.5em;
+}
