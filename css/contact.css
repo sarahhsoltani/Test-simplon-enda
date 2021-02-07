@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Roboto:ital,wght@0,100;0,400;1,300&family=Sofia&display=swap');
 :root{
     --light-gray:#2b3032a1;
-
     --border:#2b303218;
-    --text-color:#ff686b;
     --roboto:"Roboto",sans-serif;
     --gugi:"Gugi",cursive;
     --sofia:"Sofia",cursive;
-}
-body{
-    background-color: #f8f8f8
 }
 /************* Navbar **************/
 /* Google Font */
@@ -30,7 +25,7 @@ header,section{
     --Patua: "Patua One", cursive;
     --Lobster: "lobster", cursive;
     --light-black: #2e2c2caf;
-    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+
     --light-gray: rgba(255, 255, 255, 0.877);
 }
 header a{
@@ -39,32 +34,14 @@ header a{
     color:whitesmoke;
 }
 header{
- 
+   background: #dd2476;
    background: black;
 }
 .navbar-nav .nav-link:hover {
     color: #9b101f !important;
     border-bottom: 1px solid #9b101f;
   }
-.dropdown-content{
-    position: absolute;
-    display: none;
-    background: white;
-    min-width: 160px;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0),0.2;
-    z-index: 1;
-}
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    display: block ;
-}
-.dropdown-content a:hover {
-    background: #ddd;
-}
-.dropdown:hover .dropdown-content{
-    display: block;
-}
+
 header .nav-item:last-child{
     padding-right: 10.5em;}
 header .nav-item{
@@ -104,31 +81,7 @@ header .container .col-md-7 button {
     border-radius:  30px;
     font-weight: bold;
 }
-/***** Section 1  *************/
-.primary-color{
-    color:#9b101f;
-    font-family: var(--gugi);
-}
-.section-one{
-    background-color: black;
-}
-.section-one h2{
-    color: white;
-}
-.section-one{
-    color: gray;
-}
-.title{
-    font-family: var(--Rubik);
-}
-/* card */
-.card-occ{
-    width: 233px;
-}
-.btn-achat{
-    background-color:  #9b101f;
-}
-/*****Footer  ******/
+/********************************** Footer  *******************************/
 footer {
     background: rgb(0, 0, 0);
     overflow-x: hidden;
@@ -148,11 +101,13 @@ footer .input-group .input-group-text{
     border: none;
 } 
 footer .column i{
-    color: #9b101f;
+    color: #9b101f ;
+    
+}
+
+footer i{
+    padding:0 0.5em;
 }
 .log{
     color: white;
-}
-footer i{
-    padding:0 0.5em;
 }

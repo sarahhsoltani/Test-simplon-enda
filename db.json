@@ -58,52 +58,71 @@
       "auteure": "patrick süskind",
       "image":"https://images-na.ssl-images-amazon.com/images/I/51FBVX13C3L._SX322_BO1,204,203,200_.jpg"
     }
+   
   ],
-  "livres3":[{
-    "id": 9,
-    "name": "Sapiens",
-    "prix": "55.900",
-    "auteure": "patrick süskind",
-    "image":"https://images-na.ssl-images-amazon.com/images/I/41HtOsNN4WL._SX347_BO1,204,203,200_.jpg"
+  "livres3":[
+    {
+      "id": 9,
+      "name": "Sapiens",
+      "prix": "55.900",
+      "auteure": "patrick süskind",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/41HtOsNN4WL._SX347_BO1,204,203,200_.jpg"
+    },
+  {
+    "id": 10,
+    "name": "M.K Ghandi",
+    "prix": "35.900",
+    "auteure": "Mohandas Gandhi",
+    "image":"https://m.media-amazon.com/images/I/81EUaIiJSXL._AC_UL320_.jpg"
   },
-{
-  "id": 10,
-  "name": "M.K Ghandi",
-  "prix": "35.900",
-  "auteure": "Mohandas Gandhi",
-  "image":"https://m.media-amazon.com/images/I/81EUaIiJSXL._AC_UL320_.jpg"
-},
-{
-  "id": 11,
-  "name": "Black Milk",
-  "prix": "65.900",
-  "auteure": "Elif shafak",
-  "image":"https://images-na.ssl-images-amazon.com/images/I/41zjw7W3zkL._SX329_BO1,204,203,200_.jpg"
-},
-{
-  "id": 12,
-  "name": "Letters to vera",
-  "prix": "25.900",
-  "auteure": "Vladimir Nabokov",
-  "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"
-}
+  {
+    "id": 11,
+    "name": "Black Milk",
+    "prix": "65.900",
+    "auteure": "Elif shafak",
+    "image":"https://images-na.ssl-images-amazon.com/images/I/41zjw7W3zkL._SX329_BO1,204,203,200_.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Letters to vera",
+    "prix": "25.900",
+    "auteure": "Vladimir Nabokov",
+    "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"
+  }
 ],
 "livres-occasion":[
   {"id": 13,
     "name": "Le silex noir",
-    "prix": "11.900",
+    "prix": "12.900",
     "image":"https://images.noosfere.org/couv/g/gallfolio3566_1993.jpg"},
 
-    {"id": 13,
-      "name": "Le silex noir",
-      "prix": "11.900",
-      "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"},
+    {"id": 14,
+      "name": "La magraine",
+      "prix": "14.950",
+      "image":"https://ec56229aec51f1baff1d-185c3068e22352c56024573e929788ff.ssl.cf1.rackcdn.com/attachments/large/1/8/8/004146188.jpg"},
 
-      {"id": 13,
-        "name": "Le silex noir",
-        "prix": "11.900",
-        "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"}
+      {"id": 15,
+        "name": "Amour Parfait",
+        "prix": "15.900",
+        "image":"https://images-eu.ssl-images-amazon.com/images/I/41JkH3l7LQL._SX195_.jpg"},
+
+        {"id": 16,
+          "name": "Vous revoir",
+          "prix": "16.900",
+          "image":"https://images.leslibraires.ca/books/9782266199605/front/9782266199605_large.jpg"},
+
+          {"id": 17,
+            "name": "Les Misérables",
+            "prix": "18.900",
+            "image":"https://cdn3.ceresbookshop.com/8083-large_default/les-mis%C3%A9rables.jpg"},
+
+            {"id": 18,
+              "name": "قصر الشوق",
+              "prix": "21.900",
+              "image":"https://images-na.ssl-images-amazon.com/images/I/515EmqnUbVL._SX321_BO1,204,203,200_.jpg"}
+         
 ]
 
   }    
   
+

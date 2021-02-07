@@ -92,7 +92,7 @@
       </div>
       <div class="col-md-4 col-12 text-center">
         <h2 class="my-md-3 site-title primary-color mr-5">
-          Tous les Produits
+            Livres d’occasion
         </h2>
       </div>
 
@@ -167,7 +167,7 @@
         <div class="container-fluid mt-2">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="col-md-12 border">
+                    <div class="col-md-12 border " style="background-color: #f8f9fa;">
                         <div class="row">
                           <div class="col-md-3">
                             <h2>
@@ -222,7 +222,7 @@
                         />
                         <div class="card-img-overlay">
                           <h3 class="card-title text-dark">Rachéte vos livres</h3>
-                          <button class="btn btn-danger">Je découverte</button>
+                          <button class="btn btn-danger ml-5 mt-4">Je découverte</button>
                         </div>
                       </div>
                 </div>
@@ -266,50 +266,64 @@
                         </div>
                       </div>
                 
-                <!-----------------------  ----------------------->
+                <!----------------------- les premiers livres en occasion ----------------------->
                 <div class="col-md-12 col-sm-12 mt-3 ">
                     <div id="livres-occasion" class="row text-center ml-5 ">
-                       
+                        <script>
+                            axios
+                              .get("http://localhost:3004/livres-occasion")
+                              .then((res) => {
+                                console.log(res.data[0]);
+                                let datas=res.data
+                                document.getElementById('livres-occasion').innerHTML=datas.map(el=>
+                                `<div >
+                                  <div >
+                                  
+                                    <div class="col-md-4 col-sm-12  col-12 ml-3 mt-2">
+                                      <!--------------- book-1 ------------------------>
+                                    <div class="card card-occ " >
+                                      <img src=${el.image} class="card-img-top img-fluid "   alt="...">
+                                    <div class="card-body text-center">
+                                       <h5 class="card-title">${el.name}</h5>
+                                       <h5>${el.prix}</h5>
+                                       <div class="row">
+                                        <i class="fas fa-heart heart fa-2x mr-2"></i>
+                                       <button  class="btn btn-achat " style="background-color: #9b101f;
+                                        color: white;">Commander <i class="fas fa-cart-arrow-down fa-1x">
+                                        </i></button>
+                                        </div>
+                                     </div>
+                                
+                                 </div>
+                                 </div>
+                                 </div>
+                                 </div>
+                                `
+                                  ).join(" ")
+                              })
+                              .catch((err) => {
+                                console.log(err);
+                              });
+                          </script>
     
                         </div>
                      </div>   
+                  
+                                 </div>
+                                 </div>
+                             
+    
+                        </div>
+                     </div>   
+                </div>  
                 </div>        
+                
                 <!-------------------------End Part Two  --------------->
             </div>
         </div>
     </section>
-    <script>
-        axios
-          .get("http://localhost:3004/livres-occasion")
-          .then((res) => {
-            console.log(res.data[0]);
-            let datas=res.data
-            document.getElementById('livres-occasion').innerHTML=datas.map(el=>
-            `<div >
-              <div >
-              
-                <div class="col-md-4 col-sm-12  col-12 ml-3">
-                  <!--------------- book-1 ------------------------>
-                <div class="card card-occ "  >
-                  <img src=${el.image} class="card-img-top img-fluid "   alt="...">
-                <div class="card-body text-center">
-                   <h3 class="card-title">${el.name}</h3>
-                   <h5>${el.prix}</h5>
-                   <a href="#" class="btn btn-danger ">Voir Plus</a>
-                 </div>
-            
-             </div>
-             </div>
-             </div>
-             </div>
-            `
-              ).join(" ")
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      </script>
- <!--------------------- Footer----------- -->
+    
+ <!---------------------------------------------- Footer------------------------- -->
  <footer>
     <div class="container-fluid p-0">
       <div class="row text-left">
@@ -385,6 +399,6 @@
   <script src="js/bootstrap.js.map"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js.map"></script>
-<script src="index.js"></script>    
+  <script src="index.js"></script>    
 </body>
 </html>
