@@ -58,7 +58,52 @@
       "auteure": "patrick süskind",
       "image":"https://images-na.ssl-images-amazon.com/images/I/51FBVX13C3L._SX322_BO1,204,203,200_.jpg"
     }
-  ]
+  ],
+  "livres3":[{
+    "id": 9,
+    "name": "Sapiens",
+    "prix": "55.900",
+    "auteure": "patrick süskind",
+    "image":"https://images-na.ssl-images-amazon.com/images/I/41HtOsNN4WL._SX347_BO1,204,203,200_.jpg"
+  },
+{
+  "id": 10,
+  "name": "M.K Ghandi",
+  "prix": "35.900",
+  "auteure": "Mohandas Gandhi",
+  "image":"https://m.media-amazon.com/images/I/81EUaIiJSXL._AC_UL320_.jpg"
+},
+{
+  "id": 11,
+  "name": "Black Milk",
+  "prix": "65.900",
+  "auteure": "Elif shafak",
+  "image":"https://images-na.ssl-images-amazon.com/images/I/41zjw7W3zkL._SX329_BO1,204,203,200_.jpg"
+},
+{
+  "id": 12,
+  "name": "Letters to vera",
+  "prix": "25.900",
+  "auteure": "Vladimir Nabokov",
+  "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"
+}
+],
+"livres-occasion":[
+  {"id": 13,
+    "name": "Le silex noir",
+    "prix": "11.900",
+    "image":"https://images.noosfere.org/couv/g/gallfolio3566_1993.jpg"},
+
+    {"id": 13,
+      "name": "Le silex noir",
+      "prix": "11.900",
+      "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"},
+
+      {"id": 13,
+        "name": "Le silex noir",
+        "prix": "11.900",
+        "image":"https://images.epagine.fr/246/9780141192246_1_75.jpg"}
+]
 
   }    
   

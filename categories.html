@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>application-web</title>
+    <title>Catégories</title>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./css/catégories.css" />
@@ -51,12 +51,10 @@
                   <a class="nav-link" href="catégories.html">Catégories</a>
                 </li>
                 <li class="nav-item ">
-                   <a href="#" class="nav-link"> Livres d'occasion</a>
+                   <a href="livres-d'occasion.html" class="nav-link"> Livres d'occasion</a>
                    
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Actualités</a>
-                </li>
+               
   
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
@@ -250,9 +248,9 @@
         });
     </script>
 
- <!------------ 2ém Catégories  ------------>
- <div class="container-fluid">
-  <div class="col-md-12 col-sm-12 my-4">
+ <!----------------------------- 2ém Catégories  ------------------------->
+ < class="container-fluid">
+  <main class="col-md-12 col-sm-12 my-4">
     <div class="row">
      <div class="col-md-6 ">
        <h2 > From Book to Screen</h2>
@@ -306,6 +304,218 @@
           console.log(err);
         });
     </script>
+    <!----------- 4ém Catégories Letters, Diaries and Biographies  ------>
+    <div class="container-fluid">
+      <div class="col-md-12 col-sm-12 my-4">
+        <div class="row">
+         <div class="col-md-6 ">
+           <h2 > Letters, Journaux et Biographies </h2>
+          </div>
+          <div class="col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                   <label class="input-group-text" for="inputGroupSelect01">Trier par</label>
+                </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Tous</option>
+                      <option value="1">Prix</option>
+                      <option value="2">Référence</option>
+                      <option value="3">Nom de produit:A à Z </option>
+                      <option value="3">En Stock</option>
+                     </select>
+               </div>
+          </div>
+        </div> 
+        
+       
+      </div>
+   
+    </div>
+     <!-------------------- Letters, Diaries and Biographies ----------------------->
+    <div id="livres3"  class="row text-center ml-3 " ></div>
+     <script>
+      axios
+        .get("http://localhost:3004/livres3")
+        .then((res) => {
+          console.log(res.data[0]);
+          let datas=res.data
+          document.getElementById('livres3').innerHTML=datas.map(el=>
+          `<div >
+            <div >
+            
+              <div class="col-md-3 col-sm-12">
+                <!--------------- book-1 ------------------------>
+              <div class="card cardy "  >
+                <img src=${el.image} class="card-img-top img-fluid" alt="...">
+              <div class="card-body text-center">
+                 <h3 class="card-title">${el.name}</h3>
+                 <h5>${el.prix}</h5>
+                 <h6>${el.auteure}</h6>
+                 <a href="#" class="btn btn-danger ">Voir Plus</a>
+               </div>
+          
+           </div>
+           </div>
+           </div>
+           </div>
+          `
+            ).join(" ")
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    </script>
+     <!----------- Les catégories les plus consultés  ------------>
+     <section id="cardsection ">
+      <div class="row  my-5">
+        <h1 class="catégorie-title text-center"> <i class="fas fa-heartbeat p-2"></i> Les Catégorie les plus Consultés</h1>
+     </div>
+   <div class="row ">
+     <div class="col-md-3 col-sm-12">
+      <img src="./assets/2.jpeg" class="img-fluid" alt="">
+     </div>
+     <div class="col-md-9 col-sm-12">
+      <div class=" container ">
+        
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-12 py-2">
+                <div class="border mx-2 p-4" id="homecard1">
+                    <h4 class=" text-center cardtext ">
+                      
+                        <i class="fas fa-archway fa-2x p-2"></i>
+                    <h4 class="py-2 h4-responsive text-center">Romans et Litérature</h4>
+                 </h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-12 py-2">
+                <div class="border mx-2 p-4" id="homecard2">
+                    <h4 class="text-center cardtext">
+                    
+                        <i class="fas fa-child fa-2x p-2"></i>
+                    <h4 class="py-2 text-center">Livres pour Enfants</h4>
+                 </h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-12 py-2">
+                <div class="border mx-2 p-3" id="homecard3">
+                    <h4 class="cardtext text-center ">
+                    
+                        <i class="fas fa-question-circle fa-2x p-2 "></i>
+                    <h4 class="py-4 text-center">Bande Destinée</h4>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-12 py-2">
+              <div class="border mx-2 p-4" id="homecard3">
+                  <h4 class="cardtext text-center ">
+                   
+                      <i class="fas fa-vials fa-2x p-2"></i>
+                  <h4 class="py-2 text-center">Sciences Humaines</h4>
+                 </h4>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-------------------------Catégorie consulté  N°2  ----------->
+    <div class=" container ">
+        
+      <div class="row">
+          <div class="col-md-3 col-sm-12 col-12 py-2">
+              <div class="border mx-2 p-4" id="homecard1">
+                  <h4 class=" text-center cardtext ">
+                    
+                    <i class="fas fa-user-graduate fa-2x p-2"></i>
+                  <h4 class="py-2 h4-responsive text-center">Etudes superieurs</h4>
+               </h4>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-12 py-2">
+              <div class="border mx-2 p-4" id="homecard2">
+                  <h4 class="text-center cardtext">
+                   
+                      <i class="fas fa-landmark fa-2x p-4"></i>
+                  <h4 class="py-2 text-center">Histoire</h4>
+               </h4>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-12 py-2">
+              <div class="border mx-2 p-3" id="homecard3">
+                  <h4 class="cardtext text-center ">
+                   
+                      <i class="fab fa-searchengin fa-2x  "></i>
+                  <h4 class="py-4 text-center"> Policiers & Polars</h4>
+                  </h4>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-12 py-2">
+            <div class="border mx-2 p-4" id="homecard3">
+                <h4 class="cardtext text-center">
+                 
+                  <i class="fas fa-music fa-2x p-2"></i>
+                <h4 class="py-2 text-center">Art Musique & Cinéma</h4>
+               </h4>
+            </div>
+        </div>
+      </div>
+  </div>
+     </div>
+   </div>
+  </section>
+    </main>
+     <!--------------------- Footer----------- -->
+     <footer>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-5 col-md-5">
+            <h1 class="text-light"><a class="navbar-brand log" href="#"
+                ><i class="fas fa-book-reader fa-3x" style="color: #9b101f"></i>
+    
+                <sup style="border: solid 1px #9b101f; padding: 3px">B</sup>
+                <sup>O</sup>o k<sub style="color: #9b101f"> S</sub></a
+              ></h1>
+            <p class="text-muted">
+                WebBooks SARL <br>
+                Route de Alain Savary 8, 1213 Momplaisir, Tunis
+            </p>
+            
+          </div>
+          <div class="col-md-5">
+            <h4 class="text-light">Newsletter</h4>
+            <p class="text-muted">Restez à jour</p>
+            <form class="form-inline">
+              <div class="col-pl-0">
+                <div class="input-group pr-5">
+                  <input
+                    type="text"
+                    class="input-control bg-dark text-white"
+                    placeholder="Email"
+                  />
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-arrow-right" style="color: white"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <h4 class="text-light">Suivez nous</h4>
+            <p class="text-muted">Soyons sociaux</p>
+            <div class="column" >
+              <i style="cursor: pointer !important;" class="fab fa-facebook-f"></i>
+              <i style="cursor: pointer !important;" class="fab fa-instagram"></i>
+              <i style="cursor: pointer !important;" class="fab fa-twitter"></i>
+              <i style="cursor: pointer !important;" class="fab fa-youtube"></i>
+            </div>
+          </div>
+         
+        </div>
+        <p class="text-muted text-center mt-5">
+            Droits d'auteur ©2021 Tous les droits sont réserveés 
+        </p>
+      </div>
+    </footer>
  <!------------------------------------ CDN JS-------------------------- -->
 
     <!-- ********************** Bootstrap JS *************************** -->

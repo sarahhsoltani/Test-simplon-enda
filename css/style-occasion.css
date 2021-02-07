@@ -8,6 +8,9 @@
     --gugi:"Gugi",cursive;
     --sofia:"Sofia",cursive;
 }
+body{
+    background-color: #f8f8f8
+}
 /************* Navbar **************/
 /* Google Font */
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
@@ -36,14 +39,32 @@ header a{
     color:whitesmoke;
 }
 header{
-   background: #dd2476;
+ 
    background: black;
 }
 .navbar-nav .nav-link:hover {
     color: #9b101f !important;
     border-bottom: 1px solid #9b101f;
   }
-
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0),0.2;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    display: block ;
+}
+.dropdown-content a:hover {
+    background: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
 header .nav-item:last-child{
     padding-right: 10.5em;}
 header .nav-item{
@@ -83,66 +104,26 @@ header .container .col-md-7 button {
     border-radius:  30px;
     font-weight: bold;
 }
-/******** Section 1  *************/
+/***** Section 1  *************/
 .primary-color{
     color:#9b101f;
     font-family: var(--gugi);
 }
-/* .bg-primary-color{
-    background-color:var(--);
-} */
-.text-color{
-    color:var(--text-color)
+.section-one{
+    background-color: black;
 }
-.font-robot{
-    font-family: var(--roboto);
+.section-one h2{
+    color: white;
 }
-.lightblue{
-    color:lightblue
+.section-one{
+    color: gray;
 }
-.icons{
-    padding-left: 7.5em;
+.title{
+    font-family: var(--Rubik);
 }
-
-#videowrapper {
-    padding: 0;
-    
-  
-    box-shadow: 2px 2px 0 0 #bcbcbc, 8px 8px 16px rgba(0,0,0,0.1);
-}
-.catégorie-title{
-    font-family: var(--gugi);
-    font-weight: 700;
-    color:#9b101f;
-}
-.destination{
-    font-family: var(--gugi);
-    font-weight: 700;
-}
-.read{
-    border-radius: 30px !important;
-    font-weight: bold !important;
-    background-color: #9b101f !important;
-    color: white !important;
-}
-/* Catégorie */
-#homecard1:hover , #homecard2:hover, #homecard3:hover{
-    transform: translateY(-15px);
-    background-color: white;
-}
-#homecard1, #homecard2, #homecard3 {
-   cursor: pointer;
-    border-radius: 20px;
-    transition: 0.8s ease-in-out;
-}
-.mycard{
-
-    display: flex;
-
-}
-.cardy{
-    width: 244px;
-    margin-left: 25px;
+/* card */
+.card-occ{
+    width: 233px;
 }
 /*****Footer  ******/
 footer {
@@ -164,13 +145,11 @@ footer .input-group .input-group-text{
     border: none;
 } 
 footer .column i{
-    color: #9b101f ;
-    
-}
-
-footer i{
-    padding:0 0.5em;
+    color: #9b101f;
 }
 .log{
     color: white;
+}
+footer i{
+    padding:0 0.5em;
 }

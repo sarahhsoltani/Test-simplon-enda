@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres d'occasion</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/style-occasion.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+
+</head>
+<body>
+     <!--------------------- Header----------- -->
+     <header>
+        <!--------------------- Navbar----------- -->
+        <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"
+              ><i class="fas fa-book-reader fa-3x" style="color: #9b101f"></i>
+  
+              <sup style="border: solid 1px #9b101f; padding: 3px">B</sup>
+              <sup>O</sup>o k<sub style="color: #9b101f"> S</sub></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-align-right text-light"></i
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="mr-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="acceuil.html"
+                    >Acceuil <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categories.html">Catégories</a>
+                </li>
+                <li class="nav-item ">
+                   <a href="livres-d'occasion.html" class="nav-link"> Livres d'occasion</a>
+                   
+                </li>
+               
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-light">Sign In</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-light">Sign Out</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+  <!-------------------End Navbar  --------------------->
+   <!--------------- /Navbar  --------------------->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-12">
+        <div class="btn-group">
+          <button
+            class="btn border dropdown-toggle my-md-4 my-2"
+            data-toggle="dropdown"
+            area-haspopus="true"
+            area-expanded="false "
+            style="color: #9b101f"
+          >
+            Nos Livres
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item"> DT-EURO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 text-center">
+        <h2 class="my-md-3 site-title primary-color mr-5">
+          Tous les Produits
+        </h2>
+      </div>
+
+      <div class="col-md-4 col-12 icons">
+        <p class="my-md-4 header-links d-flex ml-5">
+          <a href="#"
+            ><i
+              class="fas fa-search p-2 fa-1x border rounded-circle mr-3"
+              style="color: #9b101f"
+            ></i
+          ></a>
+          <a href="#">
+            <i
+              class="fas fa-shopping-basket p-2 fa-1x border rounded-circle"
+              style="color: #9b101f"
+            ></i
+          ></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<!------------------ Main  --------------------->
+ <main>
+    <!--------------------- Section 1----------- -->
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row section-one pt-5">
+          <div class="col-md-6 col-sm-12 text-center">
+            <h2>S'occupez chez toi..</h2>
+            <p class="text-justify px-5 pt-5">
+              Notre sélection de livres pour s’occuper de vous pendant le
+              votre temps libre....
+              <br />
+
+              Nous voilà à nouveau confinés et il faut trouver de quoi
+              s’occuper. Notre sélection est là pour vous donner des idées
+              d’activités à faire chez vous et prendre soin de vous.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img
+              src="./assets/ac5.jfif"
+              class="img-fluid w-100 h-75"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="col-md-12 col-sm-12">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="col-md-12 text-center title py-4">
+              <h1>
+                <span style="color: #9b101f">
+                  <i class="fab fa-accusoft pr-4"></i>Nouveau sur</span
+                >
+                Notre Site
+                <br />
+                Votre Livre d'occasion à partir de
+                <span style="color: #9b101f">8Dt </span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------- section 2  ------------------------->
+    <section>
+        <div class="container-fluid mt-2">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col-md-12 border">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <h2>
+                              <i
+                                class="fas fa-truck-moving pt-3"
+                                style="color: #9b101f"
+                              ></i>
+                            </h2>
+                          </div>
+                          <div class="col-md-9">
+                            <h5>Livraison à domicile</h5>
+                            <p>En Tunisie et partout dans le monde</p>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-md-3">
+                            <h1>
+                              <i
+                                class="fas fa-money-check-alt pt-3 pr-3"
+                                style="color: #9b101f"
+                              ></i>
+                            </h1>
+                          </div>
+                          <div class="col-md-9">
+                            <h5>Paiement sécurisé</h5>
+                            <p>partout dans le monde Modes de paiement</p>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-md-3">
+                            <h1>
+                              <i
+                                class="fas fa-file-invoice-dollar pt-3 pr-3"
+                                style="color: #9b101f"
+                              ></i>
+                            </h1>
+                          </div>
+                          <div class="col-md-9">
+                            <h5>Modes de paiement</h5>
+                            <p>Carte bancaire, chèque</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-------- img --------->
+                      <div class="card text-white mt-2">
+                        <img
+                          class="card-img"
+                          src="./assets/photo-11.jpeg"
+                          alt="Card image"
+                        />
+                        <div class="card-img-overlay">
+                          <h3 class="card-title text-dark">Rachéte vos livres</h3>
+                          <button class="btn btn-danger">Je découverte</button>
+                        </div>
+                      </div>
+                </div>
+                <!---------------------------Part Two  -------------------->
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-3">Nos Livres d'occasion</div>
+                        <div class="col-md-3">
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01"
+                                >Afficher</label
+                              >
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>1..</option>
+                              <option value="1">24..</option>
+                              <option value="2">60..</option>
+                            </select>
+                            <p>Par pages</p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01"
+                                >Tirer par</label
+                              >
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>Tous</option>
+                              <option value="1">Prix</option>
+                              <option value="2">Référence</option>
+                              <option value="3">Nom de produit:A à Z</option>
+                              <option value="3">En Stock</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <p>Il y a 378 produits.</p>
+                        </div>
+                      </div>
+                
+                <!-----------------------  ----------------------->
+                <div class="col-md-12 col-sm-12 mt-3 ">
+                    <div id="livres-occasion" class="row text-center ml-5 ">
+                       
+    
+                        </div>
+                     </div>   
+                </div>        
+                <!-------------------------End Part Two  --------------->
+            </div>
+        </div>
+    </section>
+    <script>
+        axios
+          .get("http://localhost:3004/livres-occasion")
+          .then((res) => {
+            console.log(res.data[0]);
+            let datas=res.data
+            document.getElementById('livres-occasion').innerHTML=datas.map(el=>
+            `<div >
+              <div >
+              
+                <div class="col-md-4 col-sm-12  col-12 ml-3">
+                  <!--------------- book-1 ------------------------>
+                <div class="card card-occ "  >
+                  <img src=${el.image} class="card-img-top img-fluid "   alt="...">
+                <div class="card-body text-center">
+                   <h3 class="card-title">${el.name}</h3>
+                   <h5>${el.prix}</h5>
+                   <a href="#" class="btn btn-danger ">Voir Plus</a>
+                 </div>
+            
+             </div>
+             </div>
+             </div>
+             </div>
+            `
+              ).join(" ")
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      </script>
+ <!--------------------- Footer----------- -->
+ <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-md-5">
+          <h1 class="text-light"><a class="navbar-brand log" href="#"
+              ><i class="fas fa-book-reader fa-3x" style="color: #9b101f"></i>
+  
+              <sup style="border: solid 1px #9b101f; padding: 3px">B</sup>
+              <sup>O</sup>o k<sub style="color: #9b101f"> S</sub></a
+            ></h1>
+          <p class="text-muted">
+              WebBooks SARL <br>
+              Route de Alain Savary 8, 1213 Momplaisir, Tunis
+          </p>
+          
+        </div>
+        <div class="col-md-5">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Restez à jour</p>
+          <form class="form-inline">
+            <div class="col-pl-0">
+              <div class="input-group pr-5">
+                <input
+                  type="text"
+                  class="input-control bg-dark text-white"
+                  placeholder="Email"
+                />
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right" style="color: white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Suivez nous</h4>
+          <p class="text-muted">Soyons sociaux</p>
+          <div class="column" >
+            <i style="cursor: pointer !important;" class="fab fa-facebook-f"></i>
+            <i style="cursor: pointer !important;" class="fab fa-instagram"></i>
+            <i style="cursor: pointer !important;" class="fab fa-twitter"></i>
+            <i style="cursor: pointer !important;" class="fab fa-youtube"></i>
+          </div>
+        </div>
+       
+      </div>
+      <p class="text-muted text-center mt-5">
+          Droits d'auteur ©2021 Tous les droits sont réserveés 
+      </p>
+    </div>
+  </footer>
+<!------------------------------------ CDN JS-------------------------- -->
+
+  <!-- ********************** Bootstrap JS *************************** -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.js.map"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.js.map"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js.map"></script>
+<script src="index.js"></script>    
+</body>
+</html>

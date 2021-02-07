@@ -256,9 +256,7 @@ color: #9b101f;
      
       font-size:16px !important ;
   }
-  .log{
-      color: white;
-  }
+  
   /*****Footer  ******/
   footer {
       background: rgb(0, 0, 0);
@@ -268,6 +266,9 @@ color: #9b101f;
   footer p span{
       color: #9b101f;
   }
+  .log{
+    color: white;
+}
   footer input{
       border:none;
   }
