@@ -130,6 +130,9 @@ header .container .col-md-7 button {
     font-size: 6vmin;
     color: whitesmoke;
 }
+.appli h1{
+    font-family: var(--Patua);
+}
 .cover .content p{
     font-family: var(--Patua);
     font-size: 2vmin;
