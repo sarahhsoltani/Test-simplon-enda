@@ -53,17 +53,119 @@
                 <a class="nav-link" href="categories.html">Catégories</a>
               </li>
               <li class="nav-item">
-                <a href="livres-d'occasion.html" class="nav-link"> Livres d'occasion</a>
+                <a href="livres-d'occasion.html" class="nav-link">
+                  Livres d'occasion</a
+                >
               </li>
-             
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-light">Sign In</button>
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+              <!---------------------- Modal 1---------------->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 style="color: black ; font-weight: 500;" class="modal-title" id="exampleModalLabel">MEMBERS LOG IN</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <span style="color: black;"></span>
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-users-cog"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+           <!-- -------- -->
+           <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-unlock-alt"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+          <a href="#" style="color: black; text-decoration-line:underline;"> Mot de passe oubliez ?</a>
+      </div>
+      <div class="modal-footer">
+        
+        <button
+        class="btn my-2 py-1 px-5 btn-achat"
+        style="background-color: #9b101f; color: white"
+      >
+      Connexion
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-light">Sign Out</button>
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Modal">Sign Up</button>
+                
+<!---------------------- Modal ------------------------>
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 style="color: black ; font-weight: 500;" class="modal-title" id="exampleModalLabel">S'inscrire</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+           <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-users-cog"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Username" aria-label="" aria-describedby="addon-wrapping">
+          </div>
+       <br>
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-users-cog"></i></span>
+            </div>
+            <input type="email" class="form-control" placeholder="address mail" aria-label="" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+           <!-- -------- -->
+           <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-unlock-alt"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fas fa-unlock-alt"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+    
+          <p class="m-2" style="color: black;">vous avez un compte?  <a  href="" style="color: black; text-decoration-line:underline;">S'identifier</a> </p>
+      </div>
+      <div class="modal-footer">
+        
+        <button
+        class="btn my-2 py-1 px-5 btn-achat"
+        style="background-color: #9b101f; color: white"
+      >
+      Connexion
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
               </li>
             </ul>
           </div>
@@ -77,8 +179,10 @@
             <h6>Vous pouvez vivre une</h6>
             <h1>AVENTURE EXCITANTE</h1>
             <p>
-                La librairie <strong>BooKs</strong> est au service du livre et de la culture depuis plus
-                 de 20 ans en Tunisie, et maintemant dans le monde entier grâce au web,Achetez en toute sérénité avec le paiement sécurisé..
+              La librairie <strong>BooKs</strong> est au service du livre et de
+              la culture depuis plus de 20 ans en Tunisie, et maintemant dans le
+              monde entier grâce au web,Achetez en toute sérénité avec le
+              paiement sécurisé..
             </p>
             <button class="btn px-5 py-2">Contactez Nous</button>
           </div>
@@ -88,8 +192,8 @@
         </div>
       </div>
     </header>
-     <!--------------- /Navbar  --------------------->
-    
+    <!--------------- /Navbar  --------------------->
+
     <!--------------------- Main----------- -->
     <main>
       <!--------------------- Section 1 ----------- -->
@@ -105,16 +209,22 @@
               <div class="panel text-left">
                 <h1 class="text-center">À propos de Nous</h1>
                 <p class="pt-4">
-                   Books est une librairie en ligne qui propose une large sélection de
-                     l’offre éditoriale tunisienne (en français et en arabe), 
-                    ainsi que des ouvrages édités en France. Les achats sur notre site s’effectuent de manière fiable et sécurisée.
+                  Books est une librairie en ligne qui propose une large
+                  sélection de l’offre éditoriale tunisienne (en français et en
+                  arabe), ainsi que des ouvrages édités en France. Les achats
+                  sur notre site s’effectuent de manière fiable et sécurisée.
                 </p>
                 <p>
-                     nous trions plus de cent vingt mille livres chaque mois.
-                     Notre base logistique est localisée en 
-                    Haute-Marne où nous stockons plus de 550 000 livres et d'où nous préparons nos commandes.Plusieurs centaines de partenaires-fournisseurs ont déjà rejoint notre programme, 
-                    qu'ils soient bibliothèques universitaires,associations,bibliothèques municipales,bibliothèques départementales.Depuis la création de l’entreprise, nous reversons un pourcentage de la vente de chaque livre à des organisations
-                     caritatives luttant contre l'illettrisme et en faveur de l'éducation.
+                  nous trions plus de cent vingt mille livres chaque mois. Notre
+                  base logistique est localisée en Haute-Marne où nous stockons
+                  plus de 550 000 livres et d'où nous préparons nos
+                  commandes.Plusieurs centaines de partenaires-fournisseurs ont
+                  déjà rejoint notre programme, qu'ils soient bibliothèques
+                  universitaires,associations,bibliothèques
+                  municipales,bibliothèques départementales.Depuis la création
+                  de l’entreprise, nous reversons un pourcentage de la vente de
+                  chaque livre à des organisations caritatives luttant contre
+                  l'illettrisme et en faveur de l'éducation.
                 </p>
               </div>
             </div>
@@ -319,17 +429,18 @@
       <div class="container-fluid p-0">
         <div class="row text-left">
           <div class="col-md-5 col-md-5">
-            <h1 class="text-light"><a class="navbar-brand log" href="#"
+            <h1 class="text-light">
+              <a class="navbar-brand log" href="#"
                 ><i class="fas fa-book-reader fa-3x" style="color: #9b101f"></i>
-    
+
                 <sup style="border: solid 1px #9b101f; padding: 3px">B</sup>
                 <sup>O</sup>o k<sub style="color: #9b101f"> S</sub></a
-              ></h1>
+              >
+            </h1>
             <p class="text-muted">
-                WebBooks SARL <br>
-                Route de Alain Savary 8, 1213 Momplaisir, Tunis
+              WebBooks SARL <br />
+              Route de Alain Savary 8, 1213 Momplaisir, Tunis
             </p>
-            
           </div>
           <div class="col-md-5">
             <h4 class="text-light">Newsletter</h4>
@@ -361,10 +472,9 @@
               <i class="fab fa-youtube"></i>
             </div>
           </div>
-         
         </div>
         <p class="pt-4 text-muted text-center mt-5">
-            Droits d'auteur ©2021 Tous les droits sont réserveés 
+          Droits d'auteur ©2021 Tous les droits réservés
         </p>
       </div>
     </footer>
