@@ -328,20 +328,20 @@
       axios
         .get("http://localhost:3004/livres")
         .then((res) => {
-          console.log(res.data[0]);
+          console.log( "res",res);
           let datas=res.data
-          document.getElementById('app').innerHTML=datas.map(el=>
+          document.getElementById('app').innerHTML=datas.map(book=>
           `<div > 
             <div >
             
               <div class="col-md-3 col-sm-12">
                 <!--------------- book-1 ------------------------>
               <div class="card cardy "  >
-                <img src=${el.image} class="card-img-top img-fluid" alt="...">
+                <img src=${book.image} class="card-img-top img-fluid" alt="...">
               <div class="card-body text-center">
-                 <h5 class="card-title">${el.name}</h5>
-                 <h6>${el.prix}</h6>
-                 <h6>${el.auteure}</h6>
+                 <h5 class="card-title">${book.name}</h5>
+                 <h6>${book.prix}</h6>
+                 <h6>${book.auteure}</h6>
                  <a href="#" class="btn btn-danger ">Voir Plus</a>
                </div>
           

@@ -125,6 +125,9 @@ header .container .col-md-7 button {
 .card-occ{
     width: 233px;
 }
+#heart{
+    color:black;
+}
 .btn-achat{
     background-color:  #9b101f;
 }
